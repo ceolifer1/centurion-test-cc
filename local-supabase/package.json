@@ -1,0 +1,14 @@
+{
+  "name": "centurion-local-supabase",
+  "private": true,
+  "scripts": {
+    "start": "supabase start",
+    "stop": "supabase stop",
+    "status": "supabase status",
+    "push": "supabase db push",
+    "reset": "supabase db reset"
+  },
+  "devDependencies": {
+    "supabase": "^2.84.2"
+  }
+}

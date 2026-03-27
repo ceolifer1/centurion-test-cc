@@ -1,0 +1,57 @@
+
+  VITE v5.4.10  ready in 1270 ms
+
+  ➜  Local:   http://localhost:5177/
+  ➜  Network: http://172.16.10.3:5177/
+Browserslist: browsers data (caniuse-lite) is 18 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✘ [ERROR] Cannot read file "node_modules/d3-color/src/lab.js": too many open files
+
+    node_modules/d3-color/src/index.js:2:45:
+      2 │ export {default as lab, hcl, lch, gray} from "./lab.js";
+        ╵                                              ~~~~~~~~~~
+
+✘ [ERROR] Cannot read file "node_modules/d3-color/src/cubehelix.js": too many open files
+
+    node_modules/d3-color/src/index.js:3:35:
+      3 │ export {default as cubehelix} from "./cubehelix.js";
+        ╵                                    ~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Cannot read file "node_modules/d3-color/src/color.js": too many open files
+
+    node_modules/d3-color/src/index.js:1:41:
+      1 │ export {default as color, rgb, hsl} from "./color.js";
+        ╵                                          ~~~~~~~~~~~~
+
+✘ [ERROR] Cannot read file "node_modules/d3-array/src/array.js": too many open files
+
+    node_modules/d3-array/src/bin.js:1:20:
+      1 │ import {slice} from "./array.js";
+        ╵                     ~~~~~~~~~~~~
+
+✘ [ERROR] Cannot read file "node_modules/d3-array/src/constant.js": too many open files
+
+    node_modules/d3-array/src/bin.js:3:21:
+      3 │ import constant from "./constant.js";
+        ╵                      ~~~~~~~~~~~~~~~
+
+/sessions/busy-youthful-edison/mnt/Claude/centurion-ecosystem/centurion/node_modules/esbuild/lib/main.js:1472
+  let error = new Error(text);
+              ^
+
+Error: Build failed with 5 errors:
+node_modules/d3-array/src/bin.js:1:20: ERROR: Cannot read file "node_modules/d3-array/src/array.js": too many open files
+node_modules/d3-array/src/bin.js:3:21: ERROR: Cannot read file "node_modules/d3-array/src/constant.js": too many open files
+node_modules/d3-color/src/index.js:1:41: ERROR: Cannot read file "node_modules/d3-color/src/color.js": too many open files
+node_modules/d3-color/src/index.js:2:45: ERROR: Cannot read file "node_modules/d3-color/src/lab.js": too many open files
+node_modules/d3-color/src/index.js:3:35: ERROR: Cannot read file "node_modules/d3-color/src/cubehelix.js": too many open files
+    at failureErrorWithLog (/sessions/busy-youthful-edison/mnt/Claude/centurion-ecosystem/centurion/node_modules/esbuild/lib/main.js:1472:15)
+    at /sessions/busy-youthful-edison/mnt/Claude/centurion-ecosystem/centurion/node_modules/esbuild/lib/main.js:945:25
+    at /sessions/busy-youthful-edison/mnt/Claude/centurion-ecosystem/centurion/node_modules/esbuild/lib/main.js:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  errors: [Getter/Setter],
+  warnings: [Getter/Setter]
+}
+
+Node.js v22.22.0
