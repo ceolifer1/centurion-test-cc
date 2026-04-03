@@ -1,0 +1,450 @@
+{
+  "id": "xsi",
+  "title": "Version 2.1.4 | March 31, 2026",
+  "platform": "crosssite",
+  "version": "2.1.4",
+  "generatedAt": "2026-04-03T13:10:26.493296Z",
+  "phases": [
+    {
+      "phaseNumber": 1,
+      "name": "1. Overview — How the Four Sites Connect",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p1-01",
+          "action": "Admin Hub",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p1-02",
+          "action": "Lead Generation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p1-03",
+          "action": "Funding Platform",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p1-04",
+          "action": "SPV Formation",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 2,
+      "name": "2. Test Environment URLs & Credentials",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p2-01",
+          "action": "https://ceolifer1.github.io/centurion-test-cc/",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p2-02",
+          "action": "https://ceolifer1.github.io/centurion-test-lead/",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p2-03",
+          "action": "https://ceolifer1.github.io/centurion-test-sav/",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p2-04",
+          "action": "https://ceolifer1.github.io/centurion-test-spv/",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 3,
+      "name": "3. Flow A: LeadCRM → Sav.Fund (Funding Path)",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p3-01",
+          "action": "Log in to LeadCRM as lead.employee",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-02",
+          "action": "Create new lead with name, email, phone, company",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-03",
+          "action": "Set lead qualification status to 'Qualified'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-04",
+          "action": "Export lead to Sav.Fund",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-05",
+          "action": "Log in to Sav.Fund as sav.employee",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-06",
+          "action": "Verify exported client appears in Sav.Fund client list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-07",
+          "action": "Client name, email, phone match LeadCRM data",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p3-08",
+          "action": "Complete funding application workflow in Sav.Fund",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 4,
+      "name": "4. Flow B: LeadCRM → SPV Matrix (SPV Path)",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p4-01",
+          "action": "Log in to LeadCRM as lead.employee",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-02",
+          "action": "Create new lead with name, email, phone, company",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-03",
+          "action": "Set lead qualification status to 'Qualified'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-04",
+          "action": "Export lead to SPV Matrix",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-05",
+          "action": "Log in to SPV Matrix as spv.employee",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-06",
+          "action": "Verify exported client appears in SPV Matrix",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-07",
+          "action": "Client data matches (name, email, phone, company)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-08",
+          "action": "Create SPV job for exported client",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p4-09",
+          "action": "SPV job created successfully with client association",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 5,
+      "name": "5. Flow C: Matrix 2.0 — CommandCenter Organization Replication",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p5-01",
+          "action": "Log in to CommandCenter as cc.superadmin",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-02",
+          "action": "Navigate to Organizations section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-03",
+          "action": "Identify organization with IS_MATRIX flag = true",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-04",
+          "action": "Click 'Replicate to Sites' button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-05",
+          "action": "Select target sites (LeadCRM, Sav.Fund, SPV Matrix)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-06",
+          "action": "Confirm replication",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-07",
+          "action": "Log into LeadCRM and verify organization appears",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-08",
+          "action": "Log into Sav.Fund and verify organization appears",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p5-09",
+          "action": "Log into SPV Matrix and verify organization appears",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 6,
+      "name": "6. Flow D: Cross-Site User Verification",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p6-01",
+          "action": "Log in to CommandCenter as cc.superadmin",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-02",
+          "action": "Verify user can access Organizations",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-03",
+          "action": "Create cross-site user with global role",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-04",
+          "action": "Log in to LeadCRM with cross-site user",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-05",
+          "action": "Verify user can see assigned organization data",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-06",
+          "action": "Log in to Sav.Fund with same user",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-07",
+          "action": "Verify user can see same organization data in Sav.Fund",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p6-08",
+          "action": "Verify user cannot access data from other organizations (RLS)",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 7,
+      "name": "7. Data Integrity Verification",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p7-01",
+          "action": "Client names match exactly between source and target site",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-02",
+          "action": "Email addresses match exactly",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-03",
+          "action": "Phone numbers match exactly",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-04",
+          "action": "Company associations carry over correctly",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-05",
+          "action": "Role assignments are correct and consistent",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-06",
+          "action": "Organization associations are correct",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-07",
+          "action": "Custom fields/metadata preserved in transfer",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p7-08",
+          "action": "No duplicate records created",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 8,
+      "name": "8. Edge Cases & Error Handling",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p8-01",
+          "action": "Export non-qualified lead from LeadCRM → Should fail with error message",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p8-02",
+          "action": "Export lead that already exists in target site → Duplicate handling works correctly",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p8-03",
+          "action": "Replicate organization without IS_MATRIX flag → Should fail or be rejected",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p8-04",
+          "action": "Export lead with missing required fields → System validates and prevents export",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p8-05",
+          "action": "User from LeadCRM attempts to view Sav.Fund data of another org → RLS blocks access",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p8-06",
+          "action": "Replicate to offline site → Error handling and retry mechanism works",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p8-07",
+          "action": "Export lead with special characters in name/email → Data transfers without corruption",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 9,
+      "name": "9. Test Sign-Off",
+      "description": "",
+      "testCases": [
+        {
+          "id": "xsi-p9-01",
+          "action": "Pass / Fail / N/A",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p9-02",
+          "action": "Pass / Fail / N/A",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p9-03",
+          "action": "Pass / Fail / N/A",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p9-04",
+          "action": "Pass / Fail / N/A",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p9-05",
+          "action": "Pass / Fail / N/A",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "xsi-p9-06",
+          "action": "Pass / Fail / N/A",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1101 @@
+{
+  "id": "sav",
+  "title": "Manual Testing for Human Testers",
+  "platform": "savfund",
+  "version": "2.1.4",
+  "generatedAt": "2026-04-03T13:10:26.407488Z",
+  "phases": [
+    {
+      "phaseNumber": 1,
+      "name": "Phase 1: Employee Login & Dashboard",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p1-01",
+          "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/backend/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p1-02",
+          "action": "Login with sav.employee@test.centurion.dev / TestSavEmployee2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p1-03",
+          "action": "Verify Dashboard loads and displays KPIs: Active Fundings, Current Funding $, Potential Commissions, Earned Commissions",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p1-04",
+          "action": "Verify Funding Pipeline stages display (Client Onboarding, Submitted, With Funders, Approved, Funded)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p1-05",
+          "action": "Verify sidebar menu items: Dashboard, Companies, Partner Agencies, Clients, Fundings, Pitch Decks, Messages, Support Emails, Commissions, Bills, Partner Inquiries, Settings, Reports & Ideas",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p1-06",
+          "action": "Click each sidebar menu item to verify routes load without errors",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p1-07",
+          "action": "Verify user role displays as backend_user",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 2,
+      "name": "Phase 2: Company & Partner Agency Setup",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p2-01",
+          "action": "Navigate to Companies menu from sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-02",
+          "action": "Click 'Add Company' or equivalent button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-03",
+          "action": "Enter company name (e.g., Test Corp Inc)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-04",
+          "action": "Enter company email",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-05",
+          "action": "Enter company phone number",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-06",
+          "action": "Submit and verify company is created and visible in Companies list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-07",
+          "action": "Navigate to Partner Agencies menu from sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-08",
+          "action": "Click 'Add Partner Agency' or equivalent button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-09",
+          "action": "Enter partner agency name (e.g., Test Funding Partners)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-10",
+          "action": "Enter contact email",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-11",
+          "action": "Enter contact phone",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p2-12",
+          "action": "Submit and verify partner agency is created and visible in list",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 3,
+      "name": "Phase 3: Client Onboarding (Employee-Initiated)",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p3-01",
+          "action": "Navigate to Clients menu from sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-02",
+          "action": "Click 'Add Client' or equivalent button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-03",
+          "action": "Enter client first name (e.g., John)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-04",
+          "action": "Enter client last name (e.g., Doe)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-05",
+          "action": "Enter client email (e.g., john.doe@test.com)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-06",
+          "action": "Select company created in Phase 2",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-07",
+          "action": "Submit and verify client is created",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-08",
+          "action": "Click on client to open their profile",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-09",
+          "action": "Verify Personal Information section (name, email, phone)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-10",
+          "action": "Click 'Next' or 'Continue' to Business Information section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-11",
+          "action": "Enter business name",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-12",
+          "action": "Enter business type (Sole Proprietor, LLC, S-Corp, C-Corp, etc.)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-13",
+          "action": "Enter years in business",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-14",
+          "action": "Submit business information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-15",
+          "action": "Verify Document Collection section displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p3-16",
+          "action": "Verify checklist of required documents (bank statements, tax returns, etc.)",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 4,
+      "name": "Phase 4: Funding Application & Contract Signing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p4-01",
+          "action": "Navigate to Fundings menu from sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-02",
+          "action": "Click 'Create Funding Job' or equivalent",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-03",
+          "action": "Select client created in Phase 3",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-04",
+          "action": "Enter funding amount (e.g., $50,000)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-05",
+          "action": "Enter funding purpose (e.g., Expansion)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-06",
+          "action": "Enter term length (e.g., 12 months)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-07",
+          "action": "Submit funding job",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-08",
+          "action": "Verify funding job appears in funding list with status 'Client Onboarding'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-09",
+          "action": "Click on funding job to open details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-10",
+          "action": "Verify 'Generate Contract' button is available",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-11",
+          "action": "Click 'Generate Contract'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-12",
+          "action": "Verify contract document is created",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-13",
+          "action": "Verify contract displays for signature",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-14",
+          "action": "Click 'Sign Contract' or navigate to e-signature flow",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-15",
+          "action": "Verify signature pad or signing interface loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-16",
+          "action": "Complete e-signature (draw signature or type name)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-17",
+          "action": "Verify contract is marked as signed",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p4-18",
+          "action": "Verify funding status changes to 'Submitted'",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 5,
+      "name": "Phase 5: Document Upload & Approval",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p5-01",
+          "action": "Navigate to funding job created in Phase 4",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-02",
+          "action": "Locate Document Collection section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-03",
+          "action": "Click 'Upload Bank Statement'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-04",
+          "action": "Select a test PDF file (must be PDF)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-05",
+          "action": "Verify file uploads successfully",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-06",
+          "action": "Verify uploaded document displays in document list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-07",
+          "action": "Click 'Upload Tax Return'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-08",
+          "action": "Select a test PDF file",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-09",
+          "action": "Verify file uploads successfully",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-10",
+          "action": "As Employee, review each uploaded document",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-11",
+          "action": "Click 'Approve' button on bank statement",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-12",
+          "action": "Verify status changes to 'Approved'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-13",
+          "action": "Click 'Approve' button on tax return",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-14",
+          "action": "Verify both documents show approved status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p5-15",
+          "action": "Verify funding status remains or progresses to 'With Funders'",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 6,
+      "name": "Phase 6: Funder Assignment & Approval",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p6-01",
+          "action": "As Employee, navigate to the funding job from Phase 4",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-02",
+          "action": "Locate 'Assign Funder' section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-03",
+          "action": "Click 'Select Funder' dropdown",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-04",
+          "action": "Verify list of funders displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-05",
+          "action": "Select a funder (or create one if needed)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-06",
+          "action": "Submit funder assignment",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-07",
+          "action": "Verify funder assignment is saved",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-08",
+          "action": "Verify funding status changes to 'With Funders'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-09",
+          "action": "Logout from Employee account",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-10",
+          "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/funder/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-11",
+          "action": "Login with sav.funder@test.centurion.dev / TestSavFunder2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-12",
+          "action": "Verify Funder dashboard displays available funding applications",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-13",
+          "action": "Locate the funding job from Phase 4 in available applications",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-14",
+          "action": "Click to open funding job details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-15",
+          "action": "Review all submitted documents and information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-16",
+          "action": "Click 'Approve' button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-17",
+          "action": "Verify funding status changes to 'Approved'",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p6-18",
+          "action": "Verify funder receives confirmation message",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 7,
+      "name": "Phase 7: Client Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p7-01",
+          "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-02",
+          "action": "Login with sav.client@test.centurion.dev / TestSavClient2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-03",
+          "action": "Verify Client dashboard loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-04",
+          "action": "Verify client sees their fundings list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-05",
+          "action": "Locate the funding job from Phase 4",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-06",
+          "action": "Click on funding to view details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-07",
+          "action": "Verify all funding information displays correctly",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-08",
+          "action": "Verify contract is visible and marked as signed",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-09",
+          "action": "Verify uploaded documents are visible",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-10",
+          "action": "Verify document status (Pending, Approved) displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-11",
+          "action": "Verify funding status (Submitted, With Funders, Approved, Funded) displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-12",
+          "action": "Click 'Upload Additional Document' if available",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-13",
+          "action": "Select a test file",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-14",
+          "action": "Verify file uploads successfully",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p7-15",
+          "action": "Verify new document appears in document list",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 8,
+      "name": "Phase 8: Company Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p8-01",
+          "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/company/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-02",
+          "action": "Login with sav.company@test.centurion.dev / TestSavCompany2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-03",
+          "action": "Verify Company dashboard loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-04",
+          "action": "Verify company name displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-05",
+          "action": "Navigate to Team section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-06",
+          "action": "Verify company team members display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-07",
+          "action": "Navigate to Clients section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-08",
+          "action": "Verify company clients list displays (should include client from Phase 3)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-09",
+          "action": "Click on a client to view their details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-10",
+          "action": "Verify client information is complete",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-11",
+          "action": "Navigate to Fundings section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-12",
+          "action": "Verify company fundings list displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-13",
+          "action": "Click on a funding to view details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-14",
+          "action": "Verify company can view all funding information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-15",
+          "action": "Navigate to Company Settings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p8-16",
+          "action": "Verify company can update company information",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 9,
+      "name": "Phase 9: Funder Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p9-01",
+          "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/funder/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-02",
+          "action": "Login with sav.funder@test.centurion.dev / TestSavFunder2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-03",
+          "action": "Verify Funder dashboard loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-04",
+          "action": "Verify funder KPIs display: Deal Count, AUM, Approval Rate, etc.",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-05",
+          "action": "Navigate to Available Applications section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-06",
+          "action": "Verify list of pending funding applications displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-07",
+          "action": "Click on an application to view details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-08",
+          "action": "Verify all application documents and information display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-09",
+          "action": "Verify Approve/Decline buttons are available",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-10",
+          "action": "Navigate to Portfolio or Approved Deals",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-11",
+          "action": "Verify approved fundings display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p9-12",
+          "action": "Verify funding details and timeline display correctly",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 10,
+      "name": "Phase 10: Partner Agency Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p10-01",
+          "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/funding-agent/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-02",
+          "action": "Login with sav.iso@test.centurion.dev / TestSavISO2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-03",
+          "action": "Verify Partner Agency dashboard loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-04",
+          "action": "Verify partner agency name displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-05",
+          "action": "Navigate to Referred Clients section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-06",
+          "action": "Verify list of referred clients displays (should include client from Phase 3 if assigned)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-07",
+          "action": "Click on a client to view referral details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-08",
+          "action": "Verify client information and fundings display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-09",
+          "action": "Navigate to Commission section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-10",
+          "action": "Verify commission earnings display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-11",
+          "action": "Verify commission calculations are correct based on approved fundings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-12",
+          "action": "Verify commission status (Pending, Approved, Paid) displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-13",
+          "action": "Navigate to Partner Agency Settings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-14",
+          "action": "Verify partner agency can update contact information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p10-15",
+          "action": "Verify portal uses 'Partner Agency' terminology (not ISO)",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 11,
+      "name": "Phase 11: Cross-Role Feature Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p11-01",
+          "action": "As Employee, navigate to a funding job and verify all information displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-02",
+          "action": "Logout and login as Client, verify same funding shows same information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-03",
+          "action": "Logout and login as Company Agent, verify company fundings display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-04",
+          "action": "Verify all roles see consistent funding status and document information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-05",
+          "action": "Test commission calculations: Employee can view commissions for fundings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-06",
+          "action": "Verify Partner Agency commission matches employee records",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-07",
+          "action": "Test notification delivery: Approve a funding job as Employee",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-08",
+          "action": "Verify all affected roles (Client, Company, Funder, Partner Agency) receive notifications",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-09",
+          "action": "Test data visibility: Verify Client cannot see other clients' fundings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-10",
+          "action": "Verify Partner Agency can only see their referred clients",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p11-11",
+          "action": "Verify Company Agent can only see their company's clients",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 12,
+      "name": "Phase 12: Edge Cases & Error Handling",
+      "description": "",
+      "testCases": [
+        {
+          "id": "sav-p12-01",
+          "action": "Attempt login with invalid email - verify error message displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-02",
+          "action": "Attempt login with incorrect password - verify error message displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-03",
+          "action": "Attempt login with empty fields - verify error message displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-04",
+          "action": "Create a client and attempt to create duplicate with same email - verify error handling",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-05",
+          "action": "Upload a non-PDF file when PDF is required - verify error or rejection",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-06",
+          "action": "Upload an oversized file - verify file size validation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-07",
+          "action": "Create a funding job with invalid funding amount (negative or zero) - verify error",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-08",
+          "action": "Create a funding job with invalid term length - verify error",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-09",
+          "action": "Attempt to approve documents without uploading all required docs - verify error",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-10",
+          "action": "Attempt to generate contract without completing onboarding - verify error or notification",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-11",
+          "action": "Logout from one role and attempt to access another role's dashboard using browser back button - verify proper redirect",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-12",
+          "action": "Test session timeout - login and wait for session expiration, verify redirect to login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "sav-p12-13",
+          "action": "centurion-test-sav",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "id": "lea",
+  "title": "Comprehensive Manual Testing Documentation",
+  "platform": "leadcrm",
+  "version": "2.1.4",
+  "generatedAt": "2026-04-03T13:10:26.439528Z",
+  "phases": [
+    {
+      "phaseNumber": 1,
+      "name": "1. Overview & Test Environment Setup",
+      "description": "",
+      "testCases": []
+    },
+    {
+      "phaseNumber": 2,
+      "name": "2. Test User Credentials",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p2-01",
+          "action": "TestLeadEmployee2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p2-02",
+          "action": "TestLeadCompany2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p2-03",
+          "action": "TestLeadPartner2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p2-04",
+          "action": "TestPass123!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p2-05",
+          "action": "TestPass123!",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 3,
+      "name": "3. Phase 1: 1. Employee Login & Dashboard",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p3-01",
+          "action": "Navigate to Backend Auth URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-02",
+          "action": "Login with employee credentials",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-03",
+          "action": "Verify dashboard displays KPI cards",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-04",
+          "action": "Verify Total Leads card shows value",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-05",
+          "action": "Verify Active Leads card shows value",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-06",
+          "action": "Verify Companies card shows value",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-07",
+          "action": "Verify Partner Agencies card shows value",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-08",
+          "action": "Verify OPERATIONS section in sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-09",
+          "action": "Verify COMMUNICATION section in sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-10",
+          "action": "Verify CONFIGURATION section in sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-11",
+          "action": "Verify SUPPORT section in sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p3-12",
+          "action": "Navigate between sidebar sections",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 4,
+      "name": "4. Phase 2: 2. Lead Management",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p4-01",
+          "action": "Click Leads from OPERATIONS",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-02",
+          "action": "Create new lead with Name, Email, Phone",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-03",
+          "action": "Select Lead Source",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-04",
+          "action": "Verify new lead appears with New status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-05",
+          "action": "Update lead status to Working",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-06",
+          "action": "Update status to Contacted",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-07",
+          "action": "Update status to Qualified",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-08",
+          "action": "Schedule callback with date/time",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-09",
+          "action": "Verify callback in lead timeline",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-10",
+          "action": "Update status to Converted",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-11",
+          "action": "Verify converted lead exists",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p4-12",
+          "action": "Verify lost status option works",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 5,
+      "name": "5. Phase 3: 3. Company & Partner Agency Management",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p5-01",
+          "action": "Create new company with Name, Address, Phone",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-02",
+          "action": "Verify company appears in list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-03",
+          "action": "Edit company information",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-04",
+          "action": "Create new Partner Agency (not ISO)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-05",
+          "action": "Assign agents to Partner Agency",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-06",
+          "action": "Verify Partner Agency appears in list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-07",
+          "action": "Edit Partner Agency details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-08",
+          "action": "Assign lead to company",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-09",
+          "action": "Assign lead to Partner Agency",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-10",
+          "action": "Verify company filter in leads view",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-11",
+          "action": "Verify Partner Agency filter in leads view",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p5-12",
+          "action": "Delete Partner Agency (if allowed)",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 6,
+      "name": "6. Phase 4: 4. Communication Tools",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p6-01",
+          "action": "Open Active Calls or Dialer from COMMUNICATION",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-02",
+          "action": "Verify dialer interface loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-03",
+          "action": "Create email template",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-04",
+          "action": "Fill template: Subject, Body",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-05",
+          "action": "Verify template in list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-06",
+          "action": "Select lead and send email",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-07",
+          "action": "Choose email template",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-08",
+          "action": "Verify template populates body",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-09",
+          "action": "Edit email body",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-10",
+          "action": "Verify send confirmation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-11",
+          "action": "Verify email history on lead",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p6-12",
+          "action": "Test template with multiple leads",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 7,
+      "name": "7. Phase 5: 5. Configuration & Settings",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p7-01",
+          "action": "View Lead Sources from CONFIGURATION",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-02",
+          "action": "Create new Lead Source",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-03",
+          "action": "Verify Lead Source in list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-04",
+          "action": "View Destinations (Sav.Fund, SPV Matrix)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-05",
+          "action": "Access User Management",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-06",
+          "action": "Verify superadmin user listed",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-07",
+          "action": "Add new user with Role",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-08",
+          "action": "Verify new user appears",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-09",
+          "action": "Access Platform Sync settings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-10",
+          "action": "Access general Settings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-11",
+          "action": "Update company-level settings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p7-12",
+          "action": "Verify settings persist on reload",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 8,
+      "name": "8. Phase 6: Company Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p8-01",
+          "action": "Navigate to Company Portal: https://ceolifer1.github.io/centurion-test-lead/company/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-02",
+          "action": "Login with lead.company@test.centurion.dev / TestLeadCompany2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-03",
+          "action": "Verify company dashboard displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-04",
+          "action": "Verify company can view assigned leads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-05",
+          "action": "Verify lead details visible",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-06",
+          "action": "Verify communication history visible",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-07",
+          "action": "Add note to lead from company portal",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-08",
+          "action": "Verify note persists",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-09",
+          "action": "Update lead status from company view",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-10",
+          "action": "Verify status visible in backend",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-11",
+          "action": "View company profile/settings",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p8-12",
+          "action": "Verify communication preferences accessible",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 9,
+      "name": "9. Phase 7: Partner Agency Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p9-01",
+          "action": "Navigate to Partner Portal: https://ceolifer1.github.io/centurion-test-lead/partner/auth",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-02",
+          "action": "Login with lead.partner@test.centurion.dev / TestLeadPartner2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-03",
+          "action": "Verify partner dashboard displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-04",
+          "action": "Verify partner can view assigned leads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-05",
+          "action": "Verify commission information visible",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-06",
+          "action": "View commission status (Pending/Paid)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-07",
+          "action": "Filter leads by status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-08",
+          "action": "View lead details from partner view",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-09",
+          "action": "Add note to lead",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-10",
+          "action": "Verify notes appear",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-11",
+          "action": "View commission breakdown",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p9-12",
+          "action": "Update lead status from partner view",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 10,
+      "name": "10. Phase 8: Cross-Site Lead Export",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p10-01",
+          "action": "Create and qualify a lead in backend portal (status: Converted)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-02",
+          "action": "Open qualified lead details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-03",
+          "action": "Click Export or Distribute lead",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-04",
+          "action": "Select Sav.Fund as destination",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-05",
+          "action": "Verify export confirmation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-06",
+          "action": "Login to Sav.Fund test portal",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-07",
+          "action": "Verify lead appears in Sav.Fund",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-08",
+          "action": "Logout and return to LeadCRM",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-09",
+          "action": "Create another qualified lead",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-10",
+          "action": "Select SPV Matrix as destination",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-11",
+          "action": "Verify export confirmation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p10-12",
+          "action": "Login to SPV Matrix test portal",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 11,
+      "name": "11. Phase 9: Edge Cases",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p11-01",
+          "action": "Attempt login with invalid email",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-02",
+          "action": "Verify error message displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-03",
+          "action": "Attempt login with wrong password",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-04",
+          "action": "Verify account lock (if applicable)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-05",
+          "action": "Create lead without required fields",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-06",
+          "action": "Verify validation error displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-07",
+          "action": "Create duplicate lead (same email)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-08",
+          "action": "Verify duplicate detection or allows it",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-09",
+          "action": "Attempt to access unauthorized portal as backend_user",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-10",
+          "action": "Verify access denied",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-11",
+          "action": "Logout and verify session cleared",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p11-12",
+          "action": "Verify RLS: superadmin can manage organizations",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 12,
+      "name": "12. Test Sign-Off",
+      "description": "",
+      "testCases": [
+        {
+          "id": "lea-p12-01",
+          "action": "___________________________________",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "lea-p12-02",
+          "action": "___________________________________",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    }
+  ]
+}
