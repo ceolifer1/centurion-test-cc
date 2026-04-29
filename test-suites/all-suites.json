@@ -1,0 +1,3545 @@
+[
+  {
+    "id": "sav",
+    "title": "Manual Testing for Human Testers",
+    "platform": "savfund",
+    "version": "2.1.4",
+    "generatedAt": "2026-04-03T13:10:26.407488Z",
+    "phases": [
+      {
+        "phaseNumber": 1,
+        "name": "Phase 1: Employee Login & Dashboard",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p1-01",
+            "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/backend/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p1-02",
+            "action": "Login with sav.employee@test.centurion.dev / TestSavEmployee2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p1-03",
+            "action": "Verify Dashboard loads and displays KPIs: Active Fundings, Current Funding $, Potential Commissions, Earned Commissions",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p1-04",
+            "action": "Verify Funding Pipeline stages display (Client Onboarding, Submitted, With Funders, Approved, Funded)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p1-05",
+            "action": "Verify sidebar menu items: Dashboard, Companies, Partner Agencies, Clients, Fundings, Pitch Decks, Messages, Support Emails, Commissions, Bills, Partner Inquiries, Settings, Reports & Ideas",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p1-06",
+            "action": "Click each sidebar menu item to verify routes load without errors",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p1-07",
+            "action": "Verify user role displays as backend_user",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 2,
+        "name": "Phase 2: Company & Partner Agency Setup",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p2-01",
+            "action": "Navigate to Companies menu from sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-02",
+            "action": "Click 'Add Company' or equivalent button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-03",
+            "action": "Enter company name (e.g., Test Corp Inc)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-04",
+            "action": "Enter company email",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-05",
+            "action": "Enter company phone number",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-06",
+            "action": "Submit and verify company is created and visible in Companies list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-07",
+            "action": "Navigate to Partner Agencies menu from sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-08",
+            "action": "Click 'Add Partner Agency' or equivalent button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-09",
+            "action": "Enter partner agency name (e.g., Test Funding Partners)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-10",
+            "action": "Enter contact email",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-11",
+            "action": "Enter contact phone",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p2-12",
+            "action": "Submit and verify partner agency is created and visible in list",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 3,
+        "name": "Phase 3: Client Onboarding (Employee-Initiated)",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p3-01",
+            "action": "Navigate to Clients menu from sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-02",
+            "action": "Click 'Add Client' or equivalent button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-03",
+            "action": "Enter client first name (e.g., John)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-04",
+            "action": "Enter client last name (e.g., Doe)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-05",
+            "action": "Enter client email (e.g., john.doe@test.com)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-06",
+            "action": "Select company created in Phase 2",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-07",
+            "action": "Submit and verify client is created",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-08",
+            "action": "Click on client to open their profile",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-09",
+            "action": "Verify Personal Information section (name, email, phone)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-10",
+            "action": "Click 'Next' or 'Continue' to Business Information section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-11",
+            "action": "Enter business name",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-12",
+            "action": "Enter business type (Sole Proprietor, LLC, S-Corp, C-Corp, etc.)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-13",
+            "action": "Enter years in business",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-14",
+            "action": "Submit business information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-15",
+            "action": "Verify Document Collection section displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p3-16",
+            "action": "Verify checklist of required documents (bank statements, tax returns, etc.)",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 4,
+        "name": "Phase 4: Funding Application & Contract Signing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p4-01",
+            "action": "Navigate to Fundings menu from sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-02",
+            "action": "Click 'Create Funding Job' or equivalent",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-03",
+            "action": "Select client created in Phase 3",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-04",
+            "action": "Enter funding amount (e.g., $50,000)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-05",
+            "action": "Enter funding purpose (e.g., Expansion)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-06",
+            "action": "Enter term length (e.g., 12 months)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-07",
+            "action": "Submit funding job",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-08",
+            "action": "Verify funding job appears in funding list with status 'Client Onboarding'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-09",
+            "action": "Click on funding job to open details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-10",
+            "action": "Verify 'Generate Contract' button is available",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-11",
+            "action": "Click 'Generate Contract'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-12",
+            "action": "Verify contract document is created",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-13",
+            "action": "Verify contract displays for signature",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-14",
+            "action": "Click 'Sign Contract' or navigate to e-signature flow",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-15",
+            "action": "Verify signature pad or signing interface loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-16",
+            "action": "Complete e-signature (draw signature or type name)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-17",
+            "action": "Verify contract is marked as signed",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p4-18",
+            "action": "Verify funding status changes to 'Submitted'",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 5,
+        "name": "Phase 5: Document Upload & Approval",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p5-01",
+            "action": "Navigate to funding job created in Phase 4",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-02",
+            "action": "Locate Document Collection section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-03",
+            "action": "Click 'Upload Bank Statement'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-04",
+            "action": "Select a test PDF file (must be PDF)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-05",
+            "action": "Verify file uploads successfully",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-06",
+            "action": "Verify uploaded document displays in document list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-07",
+            "action": "Click 'Upload Tax Return'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-08",
+            "action": "Select a test PDF file",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-09",
+            "action": "Verify file uploads successfully",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-10",
+            "action": "As Employee, review each uploaded document",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-11",
+            "action": "Click 'Approve' button on bank statement",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-12",
+            "action": "Verify status changes to 'Approved'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-13",
+            "action": "Click 'Approve' button on tax return",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-14",
+            "action": "Verify both documents show approved status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p5-15",
+            "action": "Verify funding status remains or progresses to 'With Funders'",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 6,
+        "name": "Phase 6: Funder Assignment & Approval",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p6-01",
+            "action": "As Employee, navigate to the funding job from Phase 4",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-02",
+            "action": "Locate 'Assign Funder' section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-03",
+            "action": "Click 'Select Funder' dropdown",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-04",
+            "action": "Verify list of funders displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-05",
+            "action": "Select a funder (or create one if needed)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-06",
+            "action": "Submit funder assignment",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-07",
+            "action": "Verify funder assignment is saved",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-08",
+            "action": "Verify funding status changes to 'With Funders'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-09",
+            "action": "Logout from Employee account",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-10",
+            "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/funder/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-11",
+            "action": "Login with sav.funder@test.centurion.dev / TestSavFunder2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-12",
+            "action": "Verify Funder dashboard displays available funding applications",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-13",
+            "action": "Locate the funding job from Phase 4 in available applications",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-14",
+            "action": "Click to open funding job details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-15",
+            "action": "Review all submitted documents and information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-16",
+            "action": "Click 'Approve' button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-17",
+            "action": "Verify funding status changes to 'Approved'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p6-18",
+            "action": "Verify funder receives confirmation message",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 7,
+        "name": "Phase 7: Client Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p7-01",
+            "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-02",
+            "action": "Login with sav.client@test.centurion.dev / TestSavClient2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-03",
+            "action": "Verify Client dashboard loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-04",
+            "action": "Verify client sees their fundings list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-05",
+            "action": "Locate the funding job from Phase 4",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-06",
+            "action": "Click on funding to view details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-07",
+            "action": "Verify all funding information displays correctly",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-08",
+            "action": "Verify contract is visible and marked as signed",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-09",
+            "action": "Verify uploaded documents are visible",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-10",
+            "action": "Verify document status (Pending, Approved) displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-11",
+            "action": "Verify funding status (Submitted, With Funders, Approved, Funded) displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-12",
+            "action": "Click 'Upload Additional Document' if available",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-13",
+            "action": "Select a test file",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-14",
+            "action": "Verify file uploads successfully",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p7-15",
+            "action": "Verify new document appears in document list",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 8,
+        "name": "Phase 8: Company Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p8-01",
+            "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/company/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-02",
+            "action": "Login with sav.company@test.centurion.dev / TestSavCompany2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-03",
+            "action": "Verify Company dashboard loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-04",
+            "action": "Verify company name displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-05",
+            "action": "Navigate to Team section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-06",
+            "action": "Verify company team members display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-07",
+            "action": "Navigate to Clients section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-08",
+            "action": "Verify company clients list displays (should include client from Phase 3)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-09",
+            "action": "Click on a client to view their details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-10",
+            "action": "Verify client information is complete",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-11",
+            "action": "Navigate to Fundings section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-12",
+            "action": "Verify company fundings list displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-13",
+            "action": "Click on a funding to view details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-14",
+            "action": "Verify company can view all funding information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-15",
+            "action": "Navigate to Company Settings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p8-16",
+            "action": "Verify company can update company information",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 9,
+        "name": "Phase 9: Funder Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p9-01",
+            "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/funder/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-02",
+            "action": "Login with sav.funder@test.centurion.dev / TestSavFunder2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-03",
+            "action": "Verify Funder dashboard loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-04",
+            "action": "Verify funder KPIs display: Deal Count, AUM, Approval Rate, etc.",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-05",
+            "action": "Navigate to Available Applications section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-06",
+            "action": "Verify list of pending funding applications displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-07",
+            "action": "Click on an application to view details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-08",
+            "action": "Verify all application documents and information display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-09",
+            "action": "Verify Approve/Decline buttons are available",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-10",
+            "action": "Navigate to Portfolio or Approved Deals",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-11",
+            "action": "Verify approved fundings display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p9-12",
+            "action": "Verify funding details and timeline display correctly",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 10,
+        "name": "Phase 10: Partner Agency Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p10-01",
+            "action": "Navigate to https://ceolifer1.github.io/centurion-test-sav/funding-agent/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-02",
+            "action": "Login with sav.iso@test.centurion.dev / TestSavISO2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-03",
+            "action": "Verify Partner Agency dashboard loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-04",
+            "action": "Verify partner agency name displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-05",
+            "action": "Navigate to Referred Clients section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-06",
+            "action": "Verify list of referred clients displays (should include client from Phase 3 if assigned)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-07",
+            "action": "Click on a client to view referral details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-08",
+            "action": "Verify client information and fundings display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-09",
+            "action": "Navigate to Commission section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-10",
+            "action": "Verify commission earnings display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-11",
+            "action": "Verify commission calculations are correct based on approved fundings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-12",
+            "action": "Verify commission status (Pending, Approved, Paid) displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-13",
+            "action": "Navigate to Partner Agency Settings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-14",
+            "action": "Verify partner agency can update contact information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p10-15",
+            "action": "Verify portal uses 'Partner Agency' terminology (not ISO)",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 11,
+        "name": "Phase 11: Cross-Role Feature Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p11-01",
+            "action": "As Employee, navigate to a funding job and verify all information displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-02",
+            "action": "Logout and login as Client, verify same funding shows same information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-03",
+            "action": "Logout and login as Company Agent, verify company fundings display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-04",
+            "action": "Verify all roles see consistent funding status and document information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-05",
+            "action": "Test commission calculations: Employee can view commissions for fundings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-06",
+            "action": "Verify Partner Agency commission matches employee records",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-07",
+            "action": "Test notification delivery: Approve a funding job as Employee",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-08",
+            "action": "Verify all affected roles (Client, Company, Funder, Partner Agency) receive notifications",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-09",
+            "action": "Test data visibility: Verify Client cannot see other clients' fundings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-10",
+            "action": "Verify Partner Agency can only see their referred clients",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p11-11",
+            "action": "Verify Company Agent can only see their company's clients",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 12,
+        "name": "Phase 12: Edge Cases & Error Handling",
+        "description": "",
+        "testCases": [
+          {
+            "id": "sav-p12-01",
+            "action": "Attempt login with invalid email - verify error message displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-02",
+            "action": "Attempt login with incorrect password - verify error message displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-03",
+            "action": "Attempt login with empty fields - verify error message displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-04",
+            "action": "Create a client and attempt to create duplicate with same email - verify error handling",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-05",
+            "action": "Upload a non-PDF file when PDF is required - verify error or rejection",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-06",
+            "action": "Upload an oversized file - verify file size validation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-07",
+            "action": "Create a funding job with invalid funding amount (negative or zero) - verify error",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-08",
+            "action": "Create a funding job with invalid term length - verify error",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-09",
+            "action": "Attempt to approve documents without uploading all required docs - verify error",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-10",
+            "action": "Attempt to generate contract without completing onboarding - verify error or notification",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-11",
+            "action": "Logout from one role and attempt to access another role's dashboard using browser back button - verify proper redirect",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-12",
+            "action": "Test session timeout - login and wait for session expiration, verify redirect to login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "sav-p12-13",
+            "action": "centurion-test-sav",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lea",
+    "title": "Comprehensive Manual Testing Documentation",
+    "platform": "leadcrm",
+    "version": "2.1.4",
+    "generatedAt": "2026-04-03T13:10:26.439528Z",
+    "phases": [
+      {
+        "phaseNumber": 1,
+        "name": "1. Overview & Test Environment Setup",
+        "description": "",
+        "testCases": []
+      },
+      {
+        "phaseNumber": 2,
+        "name": "2. Test User Credentials",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p2-01",
+            "action": "TestLeadEmployee2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p2-02",
+            "action": "TestLeadCompany2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p2-03",
+            "action": "TestLeadPartner2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p2-04",
+            "action": "TestPass123!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p2-05",
+            "action": "TestPass123!",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 3,
+        "name": "3. Phase 1: 1. Employee Login & Dashboard",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p3-01",
+            "action": "Navigate to Backend Auth URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-02",
+            "action": "Login with employee credentials",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-03",
+            "action": "Verify dashboard displays KPI cards",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-04",
+            "action": "Verify Total Leads card shows value",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-05",
+            "action": "Verify Active Leads card shows value",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-06",
+            "action": "Verify Companies card shows value",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-07",
+            "action": "Verify Partner Agencies card shows value",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-08",
+            "action": "Verify OPERATIONS section in sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-09",
+            "action": "Verify COMMUNICATION section in sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-10",
+            "action": "Verify CONFIGURATION section in sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-11",
+            "action": "Verify SUPPORT section in sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p3-12",
+            "action": "Navigate between sidebar sections",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 4,
+        "name": "4. Phase 2: 2. Lead Management",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p4-01",
+            "action": "Click Leads from OPERATIONS",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-02",
+            "action": "Create new lead with Name, Email, Phone",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-03",
+            "action": "Select Lead Source",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-04",
+            "action": "Verify new lead appears with New status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-05",
+            "action": "Update lead status to Working",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-06",
+            "action": "Update status to Contacted",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-07",
+            "action": "Update status to Qualified",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-08",
+            "action": "Schedule callback with date/time",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-09",
+            "action": "Verify callback in lead timeline",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-10",
+            "action": "Update status to Converted",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-11",
+            "action": "Verify converted lead exists",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p4-12",
+            "action": "Verify lost status option works",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 5,
+        "name": "5. Phase 3: 3. Company & Partner Agency Management",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p5-01",
+            "action": "Create new company with Name, Address, Phone",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-02",
+            "action": "Verify company appears in list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-03",
+            "action": "Edit company information",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-04",
+            "action": "Create new Partner Agency (not ISO)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-05",
+            "action": "Assign agents to Partner Agency",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-06",
+            "action": "Verify Partner Agency appears in list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-07",
+            "action": "Edit Partner Agency details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-08",
+            "action": "Assign lead to company",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-09",
+            "action": "Assign lead to Partner Agency",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-10",
+            "action": "Verify company filter in leads view",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-11",
+            "action": "Verify Partner Agency filter in leads view",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p5-12",
+            "action": "Delete Partner Agency (if allowed)",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 6,
+        "name": "6. Phase 4: 4. Communication Tools",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p6-01",
+            "action": "Open Active Calls or Dialer from COMMUNICATION",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-02",
+            "action": "Verify dialer interface loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-03",
+            "action": "Create email template",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-04",
+            "action": "Fill template: Subject, Body",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-05",
+            "action": "Verify template in list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-06",
+            "action": "Select lead and send email",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-07",
+            "action": "Choose email template",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-08",
+            "action": "Verify template populates body",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-09",
+            "action": "Edit email body",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-10",
+            "action": "Verify send confirmation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-11",
+            "action": "Verify email history on lead",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p6-12",
+            "action": "Test template with multiple leads",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 7,
+        "name": "7. Phase 5: 5. Configuration & Settings",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p7-01",
+            "action": "View Lead Sources from CONFIGURATION",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-02",
+            "action": "Create new Lead Source",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-03",
+            "action": "Verify Lead Source in list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-04",
+            "action": "View Destinations (Sav.Fund, SPV Matrix)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-05",
+            "action": "Access User Management",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-06",
+            "action": "Verify superadmin user listed",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-07",
+            "action": "Add new user with Role",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-08",
+            "action": "Verify new user appears",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-09",
+            "action": "Access Platform Sync settings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-10",
+            "action": "Access general Settings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-11",
+            "action": "Update company-level settings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p7-12",
+            "action": "Verify settings persist on reload",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 8,
+        "name": "8. Phase 6: Company Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p8-01",
+            "action": "Navigate to Company Portal: https://ceolifer1.github.io/centurion-test-lead/company/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-02",
+            "action": "Login with lead.company@test.centurion.dev / TestLeadCompany2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-03",
+            "action": "Verify company dashboard displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-04",
+            "action": "Verify company can view assigned leads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-05",
+            "action": "Verify lead details visible",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-06",
+            "action": "Verify communication history visible",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-07",
+            "action": "Add note to lead from company portal",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-08",
+            "action": "Verify note persists",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-09",
+            "action": "Update lead status from company view",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-10",
+            "action": "Verify status visible in backend",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-11",
+            "action": "View company profile/settings",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p8-12",
+            "action": "Verify communication preferences accessible",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 9,
+        "name": "9. Phase 7: Partner Agency Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p9-01",
+            "action": "Navigate to Partner Portal: https://ceolifer1.github.io/centurion-test-lead/partner/auth",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-02",
+            "action": "Login with lead.partner@test.centurion.dev / TestLeadPartner2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-03",
+            "action": "Verify partner dashboard displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-04",
+            "action": "Verify partner can view assigned leads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-05",
+            "action": "Verify commission information visible",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-06",
+            "action": "View commission status (Pending/Paid)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-07",
+            "action": "Filter leads by status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-08",
+            "action": "View lead details from partner view",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-09",
+            "action": "Add note to lead",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-10",
+            "action": "Verify notes appear",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-11",
+            "action": "View commission breakdown",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p9-12",
+            "action": "Update lead status from partner view",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 10,
+        "name": "10. Phase 8: Cross-Site Lead Export",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p10-01",
+            "action": "Create and qualify a lead in backend portal (status: Converted)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-02",
+            "action": "Open qualified lead details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-03",
+            "action": "Click Export or Distribute lead",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-04",
+            "action": "Select Sav.Fund as destination",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-05",
+            "action": "Verify export confirmation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-06",
+            "action": "Login to Sav.Fund test portal",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-07",
+            "action": "Verify lead appears in Sav.Fund",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-08",
+            "action": "Logout and return to LeadCRM",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-09",
+            "action": "Create another qualified lead",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-10",
+            "action": "Select SPV Matrix as destination",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-11",
+            "action": "Verify export confirmation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p10-12",
+            "action": "Login to SPV Matrix test portal",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 11,
+        "name": "11. Phase 9: Edge Cases",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p11-01",
+            "action": "Attempt login with invalid email",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-02",
+            "action": "Verify error message displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-03",
+            "action": "Attempt login with wrong password",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-04",
+            "action": "Verify account lock (if applicable)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-05",
+            "action": "Create lead without required fields",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-06",
+            "action": "Verify validation error displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-07",
+            "action": "Create duplicate lead (same email)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-08",
+            "action": "Verify duplicate detection or allows it",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-09",
+            "action": "Attempt to access unauthorized portal as backend_user",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-10",
+            "action": "Verify access denied",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-11",
+            "action": "Logout and verify session cleared",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p11-12",
+            "action": "Verify RLS: superadmin can manage organizations",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 12,
+        "name": "12. Test Sign-Off",
+        "description": "",
+        "testCases": [
+          {
+            "id": "lea-p12-01",
+            "action": "___________________________________",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "lea-p12-02",
+            "action": "___________________________________",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spv",
+    "title": "Manual Testing for Human Testers",
+    "platform": "spvmatrix",
+    "version": "2.1.4",
+    "generatedAt": "2026-04-03T13:10:26.471077Z",
+    "phases": [
+      {
+        "phaseNumber": 1,
+        "name": "1. Overview",
+        "description": "",
+        "testCases": []
+      },
+      {
+        "phaseNumber": 2,
+        "name": "2. Test Environment & Credentials",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p2-01",
+            "action": "spv.employee@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p2-02",
+            "action": "spv.client@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p2-03",
+            "action": "spv.company@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p2-04",
+            "action": "spv.partner@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p2-05",
+            "action": "spv.provider@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p2-06",
+            "action": "spv.superadmin@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p2-07",
+            "action": "superadmin@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 3,
+        "name": "3. Employee Portal — Login & Dashboard",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p3-01",
+            "action": "Navigate to Employee login URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p3-02",
+            "action": "Enter spv.employee@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p3-03",
+            "action": "Enter TestSPVEmployee2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p3-04",
+            "action": "Click Login button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p3-05",
+            "action": "Verify sidebar menu appears",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p3-06",
+            "action": "Check KPI cards display",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 4,
+        "name": "4. Employee Portal — Client Management",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p4-01",
+            "action": "From sidebar, click Clients",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-02",
+            "action": "Verify table displays",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-03",
+            "action": "Check pagination controls",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-04",
+            "action": "Search for a client by name",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-05",
+            "action": "Click on a client row",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-06",
+            "action": "Click Create Client button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-07",
+            "action": "Fill Personal Info tab",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-08",
+            "action": "Fill Business Info tab",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-09",
+            "action": "Upload ID document",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-10",
+            "action": "Click Submit",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p4-11",
+            "action": "Verify new client in list",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 5,
+        "name": "5. Employee Portal — SPV Job Management",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p5-01",
+            "action": "From sidebar, click SPV Jobs",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-02",
+            "action": "Click Create Job button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-03",
+            "action": "Step 1: Select SPV Type",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-04",
+            "action": "Step 2: Select Client",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-05",
+            "action": "Step 3: Select Company",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-06",
+            "action": "Step 4: Select Partner Agency",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-07",
+            "action": "Review job details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-08",
+            "action": "Click Create",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-09",
+            "action": "Verify in SPV Jobs list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-10",
+            "action": "Click on an Active job",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-11",
+            "action": "Check Steps section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-12",
+            "action": "View step status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-13",
+            "action": "Click on a Pending step",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-14",
+            "action": "Upload required document",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-15",
+            "action": "Add notes to step",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-16",
+            "action": "Mark step Complete",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-17",
+            "action": "Verify job status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p5-18",
+            "action": "Verify commissions recorded",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 6,
+        "name": "6. Employee Portal — Companies & Partners",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p6-01",
+            "action": "From sidebar, click Companies",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-02",
+            "action": "Verify company table",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-03",
+            "action": "Click Create Company button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-04",
+            "action": "Fill company name and details",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-05",
+            "action": "Set commission percentage",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-06",
+            "action": "Assign company agents",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-07",
+            "action": "Click Save",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-08",
+            "action": "Click on a company row",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-09",
+            "action": "From sidebar, click Partners",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-10",
+            "action": "Verify partner table",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-11",
+            "action": "Click Create Partner button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-12",
+            "action": "Fill partner name and type",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-13",
+            "action": "Set commission percentage",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-14",
+            "action": "Click Save",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-15",
+            "action": "Click on a partner row",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p6-16",
+            "action": "Verify partner can be assigned to jobs",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 7,
+        "name": "7. Client Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p7-01",
+            "action": "Navigate to Client login URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-02",
+            "action": "Enter spv.client@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-03",
+            "action": "Enter TestSPVClient2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-04",
+            "action": "Click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-05",
+            "action": "Verify limited sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-06",
+            "action": "From sidebar, click My Jobs",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-07",
+            "action": "Verify job list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-08",
+            "action": "Click on a job",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-09",
+            "action": "Check job status display",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-10",
+            "action": "View assigned steps for client",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-11",
+            "action": "Check document requirements",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-12",
+            "action": "Verify step completion status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-13",
+            "action": "On a pending step, click Upload",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-14",
+            "action": "Select a PDF or image file",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-15",
+            "action": "Document uploads successfully",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-16",
+            "action": "Verify document in step history",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-17",
+            "action": "Click Submit for this step",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p7-18",
+            "action": "Refresh page",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 8,
+        "name": "8. Company Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p8-01",
+            "action": "Navigate to Company login URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-02",
+            "action": "Enter spv.company@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-03",
+            "action": "Enter TestSPVCompany2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-04",
+            "action": "Click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-05",
+            "action": "Verify sidebar menu",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-06",
+            "action": "From sidebar, click Jobs",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-07",
+            "action": "Verify job list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-08",
+            "action": "Click on a job",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-09",
+            "action": "Check commission tracking",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-10",
+            "action": "View client info for job",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-11",
+            "action": "Verify step status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-12",
+            "action": "From sidebar, click Commissions",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-13",
+            "action": "Verify earnings calculation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-14",
+            "action": "Check commission percentage",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-15",
+            "action": "View historical commissions",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-16",
+            "action": "Verify payment status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p8-17",
+            "action": "Export commission report",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 9,
+        "name": "9. Partner Agency Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p9-01",
+            "action": "Navigate to Partner Agency login URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-02",
+            "action": "Enter spv.partner@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-03",
+            "action": "Enter TestSPVPartner2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-04",
+            "action": "Click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-05",
+            "action": "Verify sidebar menu",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-06",
+            "action": "From sidebar, click Referrals",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-07",
+            "action": "Verify referral list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-08",
+            "action": "Click on a referral",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-09",
+            "action": "Check job status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-10",
+            "action": "View commission tracking",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-11",
+            "action": "Verify partner can see job steps",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-12",
+            "action": "From sidebar, click Commissions",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-13",
+            "action": "Verify earnings calculation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-14",
+            "action": "Check commission percentage",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-15",
+            "action": "View commission history",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-16",
+            "action": "Verify payment status",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-17",
+            "action": "Export commission report",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 10,
+        "name": "10. Service Provider Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p10-01",
+            "action": "Navigate to Service Provider login URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-02",
+            "action": "Enter spv.provider@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-03",
+            "action": "Enter TestSPVProvider2026!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-04",
+            "action": "Click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-05",
+            "action": "Verify sidebar menu",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-06",
+            "action": "From sidebar, click Assigned Tasks",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-07",
+            "action": "Verify task list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-08",
+            "action": "Click on a task",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-09",
+            "action": "Check task requirements",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-10",
+            "action": "View client info",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-11",
+            "action": "Click Mark Complete",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-12",
+            "action": "Upload completion documents",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-13",
+            "action": "Add completion notes",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-14",
+            "action": "Submit task",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p10-15",
+            "action": "Verify in Completed Tasks",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 11,
+        "name": "11. Super Admin Portal Testing",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p11-01",
+            "action": "Navigate to Employee login URL",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-02",
+            "action": "Enter spv.superadmin@test.centurion.dev or superadmin@test.centurion.dev",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-03",
+            "action": "Enter TestPass123!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-04",
+            "action": "Click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-05",
+            "action": "Verify Super Admin panel loads",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-06",
+            "action": "Check admin sidebar",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-07",
+            "action": "Click Users section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-08",
+            "action": "Search/filter users",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-09",
+            "action": "Click on a user",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-10",
+            "action": "Edit user role",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-11",
+            "action": "Reset user password",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-12",
+            "action": "Click Roles section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-13",
+            "action": "Click Companies section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-14",
+            "action": "Edit company commission",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-15",
+            "action": "Click SPV Types section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-16",
+            "action": "View system logs",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p11-17",
+            "action": "Check system settings",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 12,
+        "name": "12. V2.1.4 New Features & Changes",
+        "description": "",
+        "testCases": []
+      },
+      {
+        "phaseNumber": 9,
+        "name": "9 New SPV Columns",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p9-01",
+            "action": "Attempt login with old superadmin password",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-02",
+            "action": "Use new password: TestPass123!",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-03",
+            "action": "Test both superadmin accounts",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p9-04",
+            "action": "Verify password is case-sensitive",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 13,
+        "name": "13. Edge Cases & Error Handling",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p13-01",
+            "action": "Enter wrong email",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-02",
+            "action": "Enter wrong password",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-03",
+            "action": "Leave email blank and click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-04",
+            "action": "Leave password blank and click Login",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-05",
+            "action": "Try SQL injection in email field",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-06",
+            "action": "Attempt login after account locked (if applicable)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-07",
+            "action": "Create client without name",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-08",
+            "action": "Create company without commission %",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-09",
+            "action": "Create SPV job without selecting client",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-10",
+            "action": "Submit step without required document",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-11",
+            "action": "Leave notes field blank on completion",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-12",
+            "action": "Try to create client with same email",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-13",
+            "action": "Try to create company with same name",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-14",
+            "action": "Assign same employee twice to one job",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-15",
+            "action": "Try to create job with same reference number",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-16",
+            "action": "Upload file larger than size limit",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-17",
+            "action": "Upload unsupported file type (.exe)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-18",
+            "action": "Upload corrupted PDF",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-19",
+            "action": "Upload file with special characters in name",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-20",
+            "action": "Leave portal idle for 30 minutes",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-21",
+            "action": "Navigate back in browser after logout",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-22",
+            "action": "Open multiple portal tabs",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p13-23",
+            "action": "Clear browser cookies and refresh",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 14,
+        "name": "14. Test Sign-Off",
+        "description": "",
+        "testCases": [
+          {
+            "id": "spv-p14-01",
+            "action": "Employee Portal — Login & Dashboard",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-02",
+            "action": "Client Management (View & Create)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-03",
+            "action": "SPV Job Creation & Management",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-04",
+            "action": "Companies & Partners Management",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-05",
+            "action": "Client Portal Testing",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-06",
+            "action": "Company Portal Testing",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-07",
+            "action": "Partner Agency Portal Testing",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-08",
+            "action": "Service Provider Portal Testing",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-09",
+            "action": "Super Admin Portal Testing",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-10",
+            "action": "V2.1.4 New Features Validation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-11",
+            "action": "Edge Cases & Error Handling",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-12",
+            "action": "Performance & Load Testing (if applicable)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-13",
+            "action": "Cross-Browser Compatibility (if applicable)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "spv-p14-14",
+            "action": "Data Integrity Verification",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xsi",
+    "title": "Version 2.1.4 | March 31, 2026",
+    "platform": "crosssite",
+    "version": "2.1.4",
+    "generatedAt": "2026-04-03T13:10:26.493296Z",
+    "phases": [
+      {
+        "phaseNumber": 1,
+        "name": "1. Overview — How the Four Sites Connect",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p1-01",
+            "action": "Admin Hub",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p1-02",
+            "action": "Lead Generation",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p1-03",
+            "action": "Funding Platform",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p1-04",
+            "action": "SPV Formation",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 2,
+        "name": "2. Test Environment URLs & Credentials",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p2-01",
+            "action": "https://ceolifer1.github.io/centurion-test-cc/",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p2-02",
+            "action": "https://ceolifer1.github.io/centurion-test-lead/",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p2-03",
+            "action": "https://ceolifer1.github.io/centurion-test-sav/",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p2-04",
+            "action": "https://ceolifer1.github.io/centurion-test-spv/",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 3,
+        "name": "3. Flow A: LeadCRM → Sav.Fund (Funding Path)",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p3-01",
+            "action": "Log in to LeadCRM as lead.employee",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-02",
+            "action": "Create new lead with name, email, phone, company",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-03",
+            "action": "Set lead qualification status to 'Qualified'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-04",
+            "action": "Export lead to Sav.Fund",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-05",
+            "action": "Log in to Sav.Fund as sav.employee",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-06",
+            "action": "Verify exported client appears in Sav.Fund client list",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-07",
+            "action": "Client name, email, phone match LeadCRM data",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p3-08",
+            "action": "Complete funding application workflow in Sav.Fund",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 4,
+        "name": "4. Flow B: LeadCRM → SPV Matrix (SPV Path)",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p4-01",
+            "action": "Log in to LeadCRM as lead.employee",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-02",
+            "action": "Create new lead with name, email, phone, company",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-03",
+            "action": "Set lead qualification status to 'Qualified'",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-04",
+            "action": "Export lead to SPV Matrix",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-05",
+            "action": "Log in to SPV Matrix as spv.employee",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-06",
+            "action": "Verify exported client appears in SPV Matrix",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-07",
+            "action": "Client data matches (name, email, phone, company)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-08",
+            "action": "Create SPV job for exported client",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p4-09",
+            "action": "SPV job created successfully with client association",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 5,
+        "name": "5. Flow C: Matrix 2.0 — CommandCenter Organization Replication",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p5-01",
+            "action": "Log in to CommandCenter as cc.superadmin",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-02",
+            "action": "Navigate to Organizations section",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-03",
+            "action": "Identify organization with IS_MATRIX flag = true",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-04",
+            "action": "Click 'Replicate to Sites' button",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-05",
+            "action": "Select target sites (LeadCRM, Sav.Fund, SPV Matrix)",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-06",
+            "action": "Confirm replication",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-07",
+            "action": "Log into LeadCRM and verify organization appears",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-08",
+            "action": "Log into Sav.Fund and verify organization appears",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p5-09",
+            "action": "Log into SPV Matrix and verify organization appears",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 6,
+        "name": "6. Flow D: Cross-Site User Verification",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p6-01",
+            "action": "Log in to CommandCenter as cc.superadmin",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-02",
+            "action": "Verify user can access Organizations",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-03",
+            "action": "Create cross-site user with global role",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-04",
+            "action": "Log in to LeadCRM with cross-site user",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-05",
+            "action": "Verify user can see assigned organization data",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-06",
+            "action": "Log in to Sav.Fund with same user",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-07",
+            "action": "Verify user can see same organization data in Sav.Fund",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p6-08",
+            "action": "Verify user cannot access data from other organizations (RLS)",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 7,
+        "name": "7. Data Integrity Verification",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p7-01",
+            "action": "Client names match exactly between source and target site",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-02",
+            "action": "Email addresses match exactly",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-03",
+            "action": "Phone numbers match exactly",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-04",
+            "action": "Company associations carry over correctly",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-05",
+            "action": "Role assignments are correct and consistent",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-06",
+            "action": "Organization associations are correct",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-07",
+            "action": "Custom fields/metadata preserved in transfer",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p7-08",
+            "action": "No duplicate records created",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 8,
+        "name": "8. Edge Cases & Error Handling",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p8-01",
+            "action": "Export non-qualified lead from LeadCRM → Should fail with error message",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p8-02",
+            "action": "Export lead that already exists in target site → Duplicate handling works correctly",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p8-03",
+            "action": "Replicate organization without IS_MATRIX flag → Should fail or be rejected",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p8-04",
+            "action": "Export lead with missing required fields → System validates and prevents export",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p8-05",
+            "action": "User from LeadCRM attempts to view Sav.Fund data of another org → RLS blocks access",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p8-06",
+            "action": "Replicate to offline site → Error handling and retry mechanism works",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p8-07",
+            "action": "Export lead with special characters in name/email → Data transfers without corruption",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      },
+      {
+        "phaseNumber": 9,
+        "name": "9. Test Sign-Off",
+        "description": "",
+        "testCases": [
+          {
+            "id": "xsi-p9-01",
+            "action": "Pass / Fail / N/A",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p9-02",
+            "action": "Pass / Fail / N/A",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p9-03",
+            "action": "Pass / Fail / N/A",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p9-04",
+            "action": "Pass / Fail / N/A",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p9-05",
+            "action": "Pass / Fail / N/A",
+            "expectedResult": "",
+            "category": "general"
+          },
+          {
+            "id": "xsi-p9-06",
+            "action": "Pass / Fail / N/A",
+            "expectedResult": "",
+            "category": "general"
+          }
+        ]
+      }
+    ]
+  }
+]

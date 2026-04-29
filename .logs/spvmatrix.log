@@ -1,9 +1,0 @@
-
-  VITE v5.4.19  ready in 1171 ms
-
-  ➜  Local:   http://localhost:5176/
-  ➜  Network: http://172.16.10.3:5176/
-Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
-  npx update-browserslist-db@latest
-  Why you should do it regularly: https://github.com/browserslist/update-db#readme
-1:41:41 PM [vite] Pre-transform error: [postcss] EMFILE: too many open files, open '/sessions/busy-youthful-edison/mnt/Claude/centurion-ecosystem/spvmatrix/src/pages/super-admin/SuperAdminTimeline.tsx'

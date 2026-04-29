@@ -1,0 +1,1210 @@
+{
+  "id": "spv",
+  "title": "Manual Testing for Human Testers",
+  "platform": "spvmatrix",
+  "version": "2.1.4",
+  "generatedAt": "2026-04-03T13:10:26.471077Z",
+  "phases": [
+    {
+      "phaseNumber": 1,
+      "name": "1. Overview",
+      "description": "",
+      "testCases": []
+    },
+    {
+      "phaseNumber": 2,
+      "name": "2. Test Environment & Credentials",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p2-01",
+          "action": "spv.employee@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p2-02",
+          "action": "spv.client@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p2-03",
+          "action": "spv.company@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p2-04",
+          "action": "spv.partner@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p2-05",
+          "action": "spv.provider@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p2-06",
+          "action": "spv.superadmin@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p2-07",
+          "action": "superadmin@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 3,
+      "name": "3. Employee Portal — Login & Dashboard",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p3-01",
+          "action": "Navigate to Employee login URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p3-02",
+          "action": "Enter spv.employee@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p3-03",
+          "action": "Enter TestSPVEmployee2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p3-04",
+          "action": "Click Login button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p3-05",
+          "action": "Verify sidebar menu appears",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p3-06",
+          "action": "Check KPI cards display",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 4,
+      "name": "4. Employee Portal — Client Management",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p4-01",
+          "action": "From sidebar, click Clients",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-02",
+          "action": "Verify table displays",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-03",
+          "action": "Check pagination controls",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-04",
+          "action": "Search for a client by name",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-05",
+          "action": "Click on a client row",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-06",
+          "action": "Click Create Client button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-07",
+          "action": "Fill Personal Info tab",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-08",
+          "action": "Fill Business Info tab",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-09",
+          "action": "Upload ID document",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-10",
+          "action": "Click Submit",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p4-11",
+          "action": "Verify new client in list",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 5,
+      "name": "5. Employee Portal — SPV Job Management",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p5-01",
+          "action": "From sidebar, click SPV Jobs",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-02",
+          "action": "Click Create Job button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-03",
+          "action": "Step 1: Select SPV Type",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-04",
+          "action": "Step 2: Select Client",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-05",
+          "action": "Step 3: Select Company",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-06",
+          "action": "Step 4: Select Partner Agency",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-07",
+          "action": "Review job details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-08",
+          "action": "Click Create",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-09",
+          "action": "Verify in SPV Jobs list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-10",
+          "action": "Click on an Active job",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-11",
+          "action": "Check Steps section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-12",
+          "action": "View step status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-13",
+          "action": "Click on a Pending step",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-14",
+          "action": "Upload required document",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-15",
+          "action": "Add notes to step",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-16",
+          "action": "Mark step Complete",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-17",
+          "action": "Verify job status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p5-18",
+          "action": "Verify commissions recorded",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 6,
+      "name": "6. Employee Portal — Companies & Partners",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p6-01",
+          "action": "From sidebar, click Companies",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-02",
+          "action": "Verify company table",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-03",
+          "action": "Click Create Company button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-04",
+          "action": "Fill company name and details",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-05",
+          "action": "Set commission percentage",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-06",
+          "action": "Assign company agents",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-07",
+          "action": "Click Save",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-08",
+          "action": "Click on a company row",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-09",
+          "action": "From sidebar, click Partners",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-10",
+          "action": "Verify partner table",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-11",
+          "action": "Click Create Partner button",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-12",
+          "action": "Fill partner name and type",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-13",
+          "action": "Set commission percentage",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-14",
+          "action": "Click Save",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-15",
+          "action": "Click on a partner row",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p6-16",
+          "action": "Verify partner can be assigned to jobs",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 7,
+      "name": "7. Client Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p7-01",
+          "action": "Navigate to Client login URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-02",
+          "action": "Enter spv.client@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-03",
+          "action": "Enter TestSPVClient2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-04",
+          "action": "Click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-05",
+          "action": "Verify limited sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-06",
+          "action": "From sidebar, click My Jobs",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-07",
+          "action": "Verify job list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-08",
+          "action": "Click on a job",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-09",
+          "action": "Check job status display",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-10",
+          "action": "View assigned steps for client",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-11",
+          "action": "Check document requirements",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-12",
+          "action": "Verify step completion status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-13",
+          "action": "On a pending step, click Upload",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-14",
+          "action": "Select a PDF or image file",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-15",
+          "action": "Document uploads successfully",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-16",
+          "action": "Verify document in step history",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-17",
+          "action": "Click Submit for this step",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p7-18",
+          "action": "Refresh page",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 8,
+      "name": "8. Company Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p8-01",
+          "action": "Navigate to Company login URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-02",
+          "action": "Enter spv.company@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-03",
+          "action": "Enter TestSPVCompany2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-04",
+          "action": "Click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-05",
+          "action": "Verify sidebar menu",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-06",
+          "action": "From sidebar, click Jobs",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-07",
+          "action": "Verify job list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-08",
+          "action": "Click on a job",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-09",
+          "action": "Check commission tracking",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-10",
+          "action": "View client info for job",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-11",
+          "action": "Verify step status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-12",
+          "action": "From sidebar, click Commissions",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-13",
+          "action": "Verify earnings calculation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-14",
+          "action": "Check commission percentage",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-15",
+          "action": "View historical commissions",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-16",
+          "action": "Verify payment status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p8-17",
+          "action": "Export commission report",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 9,
+      "name": "9. Partner Agency Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p9-01",
+          "action": "Navigate to Partner Agency login URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-02",
+          "action": "Enter spv.partner@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-03",
+          "action": "Enter TestSPVPartner2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-04",
+          "action": "Click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-05",
+          "action": "Verify sidebar menu",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-06",
+          "action": "From sidebar, click Referrals",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-07",
+          "action": "Verify referral list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-08",
+          "action": "Click on a referral",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-09",
+          "action": "Check job status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-10",
+          "action": "View commission tracking",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-11",
+          "action": "Verify partner can see job steps",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-12",
+          "action": "From sidebar, click Commissions",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-13",
+          "action": "Verify earnings calculation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-14",
+          "action": "Check commission percentage",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-15",
+          "action": "View commission history",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-16",
+          "action": "Verify payment status",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-17",
+          "action": "Export commission report",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 10,
+      "name": "10. Service Provider Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p10-01",
+          "action": "Navigate to Service Provider login URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-02",
+          "action": "Enter spv.provider@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-03",
+          "action": "Enter TestSPVProvider2026!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-04",
+          "action": "Click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-05",
+          "action": "Verify sidebar menu",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-06",
+          "action": "From sidebar, click Assigned Tasks",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-07",
+          "action": "Verify task list",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-08",
+          "action": "Click on a task",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-09",
+          "action": "Check task requirements",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-10",
+          "action": "View client info",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-11",
+          "action": "Click Mark Complete",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-12",
+          "action": "Upload completion documents",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-13",
+          "action": "Add completion notes",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-14",
+          "action": "Submit task",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p10-15",
+          "action": "Verify in Completed Tasks",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 11,
+      "name": "11. Super Admin Portal Testing",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p11-01",
+          "action": "Navigate to Employee login URL",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-02",
+          "action": "Enter spv.superadmin@test.centurion.dev or superadmin@test.centurion.dev",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-03",
+          "action": "Enter TestPass123!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-04",
+          "action": "Click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-05",
+          "action": "Verify Super Admin panel loads",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-06",
+          "action": "Check admin sidebar",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-07",
+          "action": "Click Users section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-08",
+          "action": "Search/filter users",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-09",
+          "action": "Click on a user",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-10",
+          "action": "Edit user role",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-11",
+          "action": "Reset user password",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-12",
+          "action": "Click Roles section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-13",
+          "action": "Click Companies section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-14",
+          "action": "Edit company commission",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-15",
+          "action": "Click SPV Types section",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-16",
+          "action": "View system logs",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p11-17",
+          "action": "Check system settings",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 12,
+      "name": "12. V2.1.4 New Features & Changes",
+      "description": "",
+      "testCases": []
+    },
+    {
+      "phaseNumber": 9,
+      "name": "9 New SPV Columns",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p9-01",
+          "action": "Attempt login with old superadmin password",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-02",
+          "action": "Use new password: TestPass123!",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-03",
+          "action": "Test both superadmin accounts",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p9-04",
+          "action": "Verify password is case-sensitive",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 13,
+      "name": "13. Edge Cases & Error Handling",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p13-01",
+          "action": "Enter wrong email",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-02",
+          "action": "Enter wrong password",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-03",
+          "action": "Leave email blank and click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-04",
+          "action": "Leave password blank and click Login",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-05",
+          "action": "Try SQL injection in email field",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-06",
+          "action": "Attempt login after account locked (if applicable)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-07",
+          "action": "Create client without name",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-08",
+          "action": "Create company without commission %",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-09",
+          "action": "Create SPV job without selecting client",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-10",
+          "action": "Submit step without required document",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-11",
+          "action": "Leave notes field blank on completion",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-12",
+          "action": "Try to create client with same email",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-13",
+          "action": "Try to create company with same name",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-14",
+          "action": "Assign same employee twice to one job",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-15",
+          "action": "Try to create job with same reference number",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-16",
+          "action": "Upload file larger than size limit",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-17",
+          "action": "Upload unsupported file type (.exe)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-18",
+          "action": "Upload corrupted PDF",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-19",
+          "action": "Upload file with special characters in name",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-20",
+          "action": "Leave portal idle for 30 minutes",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-21",
+          "action": "Navigate back in browser after logout",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-22",
+          "action": "Open multiple portal tabs",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p13-23",
+          "action": "Clear browser cookies and refresh",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    },
+    {
+      "phaseNumber": 14,
+      "name": "14. Test Sign-Off",
+      "description": "",
+      "testCases": [
+        {
+          "id": "spv-p14-01",
+          "action": "Employee Portal — Login & Dashboard",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-02",
+          "action": "Client Management (View & Create)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-03",
+          "action": "SPV Job Creation & Management",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-04",
+          "action": "Companies & Partners Management",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-05",
+          "action": "Client Portal Testing",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-06",
+          "action": "Company Portal Testing",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-07",
+          "action": "Partner Agency Portal Testing",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-08",
+          "action": "Service Provider Portal Testing",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-09",
+          "action": "Super Admin Portal Testing",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-10",
+          "action": "V2.1.4 New Features Validation",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-11",
+          "action": "Edge Cases & Error Handling",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-12",
+          "action": "Performance & Load Testing (if applicable)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-13",
+          "action": "Cross-Browser Compatibility (if applicable)",
+          "expectedResult": "",
+          "category": "general"
+        },
+        {
+          "id": "spv-p14-14",
+          "action": "Data Integrity Verification",
+          "expectedResult": "",
+          "category": "general"
+        }
+      ]
+    }
+  ]
+}

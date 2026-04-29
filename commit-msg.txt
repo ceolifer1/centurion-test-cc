@@ -1,7 +1,0 @@
-fix: add backward-compatible role normalization to AuthContext
-
-Maps legacy role names (employee, admin, super_admin) to standardized
-names (backend_user, backend_admin, backend_superadmin) during fetch.
-Ensures login works regardless of whether DB migration has been applied.
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
