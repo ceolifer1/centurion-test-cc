@@ -1,0 +1,83 @@
+# HERALD keyless deploys (SEC-2) — GitHub OIDC -> arn:aws:iam::262602454064:role/herald-deploy
+# (trust: repo:ceolifer1/centurion-test-cc:* — bootstrap herald.tf in centurion-ascend-web).
+# Default is PLAN ONLY. Apply requires an explicit workflow_dispatch with mode=apply.
+# Stage 0: only herald-shared is applyable (agent stacks need dist/function.zip, Stage 1).
+name: herald-deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      stack:
+        description: "Env stack under infra/envs/"
+        type: choice
+        required: true
+        default: herald-shared
+        options:
+          - herald-shared
+          - herald-vera
+          - herald-nico
+          - herald-piper
+          - herald-cass
+          - herald-sol
+          - herald-gia
+          - herald-rhea
+      mode:
+        description: "plan (default, read-only) or apply"
+        type: choice
+        required: true
+        default: plan
+        options:
+          - plan
+          - apply
+  push:
+    branches: [main]
+    paths:
+      - "infra/envs/herald-shared/**"
+      - "infra/modules/agent-service/**"
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: herald-deploy-${{ github.event.inputs.stack || 'herald-shared' }}
+  cancel-in-progress: false
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    env:
+      STACK: ${{ github.event.inputs.stack || 'herald-shared' }}
+      MODE: ${{ github.event.inputs.mode || 'plan' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials (OIDC, keyless)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::262602454064:role/herald-deploy
+          aws-region: us-east-1
+
+      - name: Prove assumed identity
+        run: aws sts get-caller-identity
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+
+      - name: Terraform init
+        working-directory: infra/envs/${{ env.STACK }}
+        run: terraform init -no-color -input=false
+
+      - name: Terraform validate
+        working-directory: infra/envs/${{ env.STACK }}
+        run: terraform validate -no-color
+
+      - name: Terraform plan
+        working-directory: infra/envs/${{ env.STACK }}
+        run: terraform plan -no-color -input=false -out=tf.plan
+
+      - name: Terraform apply (dispatch mode=apply only)
+        if: github.event_name == 'workflow_dispatch' && env.MODE == 'apply'
+        working-directory: infra/envs/${{ env.STACK }}
+        run: terraform apply -no-color -input=false tf.plan
