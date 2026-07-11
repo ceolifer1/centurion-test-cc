@@ -1,0 +1,13 @@
+{
+  "name": "herald-rhea",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Rhea - presence reporter agent (Lambda), deterministic. Assembles the weekly/monthly branded HTML report (SPEC-G section 5) from the content queue, the herald_events stream, the herald_coverage snapshot, and the SPEC-F Option A pipeline value from leadcrm-prod; stores it on herald_reports (idempotent) and emails ceo@ via herald-notify. One agent = one service (SEC-3). Envelope per SPEC-B section 7.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
