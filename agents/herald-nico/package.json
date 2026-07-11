@@ -1,0 +1,13 @@
+{
+  "name": "herald-nico",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Nico - content writer agent (Lambda). Drafts platform copy via the model router (Sonnet default, Opus for hard cases), then gates every draft through Vera (review_content) before it becomes publishable. One agent = one service (SEC-3). Envelope per SPEC-B section 7; pipeline per SPEC-H section 4; queue state per SPEC-G.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
