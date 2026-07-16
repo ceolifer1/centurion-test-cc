@@ -1,0 +1,13 @@
+{
+  "name": "herald-vera",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Vera - managing-editor/compliance gate agent (Lambda). One agent = one service (SEC-3). Deterministic 35-rule engine per SPEC-E; envelope per SPEC-B section 7.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
