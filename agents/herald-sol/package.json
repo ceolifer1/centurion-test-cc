@@ -1,0 +1,13 @@
+{
+  "name": "herald-sol",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Sol - SERP / entity-graph agent (Lambda), fully deterministic + generate-not-submit. Emits schema.org Person/Organization JSON-LD + sameAs + Wikidata seed statements, computes the KYC-coverage scorecard (herald_coverage, screen 05), runs a SERP audit behind an injectable interface (no paid-API dependency), and produces Google Knowledge-Panel claim payloads + checklists. One agent = one service (SEC-3). Envelope per SPEC-B section 7.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}

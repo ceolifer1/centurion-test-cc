@@ -1,0 +1,13 @@
+{
+  "name": "herald-cass",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Cass - content strategist agent (Lambda). Builds deterministic, cap-safe content calendars (SPEC-D active hours + caps) into herald_schedules and suggests phased campaigns; hands slot briefs to Nico over the peer edge. Optional model assist for theme ideation only. One agent = one service (SEC-3). Envelope per SPEC-B section 7; pipeline per SPEC-H section 4.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
