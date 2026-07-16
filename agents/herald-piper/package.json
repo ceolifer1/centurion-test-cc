@@ -1,0 +1,19 @@
+{
+  "name": "herald-piper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Piper - browser publisher agent (Fargate, Playwright). Reads an approved/scheduled herald_content_queue item, injects the per-user session (SPEC-C, memory-only, KMS-gated) into a browser context, enforces SPEC-D platform-safety caps via reserve-then-act, and publishes (DRY-RUN by default -> nowhere real). One agent = one service (SEC-3). Envelope/contract per SPEC-B; pipeline per SPEC-H.",
+  "main": "src/entry.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "start": "node src/entry.mjs",
+    "build:image": "bash scripts/build-image.sh"
+  },
+  "dependencies": {
+    "playwright": "1.45.0",
+    "@aws-sdk/client-secrets-manager": "^3.600.0",
+    "@aws-sdk/client-lambda": "^3.600.0",
+    "@aws-sdk/client-scheduler": "^3.600.0"
+  }
+}
