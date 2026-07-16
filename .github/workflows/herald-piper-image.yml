@@ -1,0 +1,70 @@
+# HERALD Piper container image -> shared ECR (SEC-2, keyless OIDC).
+# Builds agents/herald-piper (Playwright browser publisher, SPEC-B 4.2) and pushes
+# BOTH herald-browser:piper-<version> and herald-browser:piper-latest, so the
+# infra/envs/herald-piper task def (container_image pins :piper-latest) resolves.
+# Keyless: GitHub OIDC -> arn:aws:iam::262602454064:role/herald-deploy
+# (trust repo:ceolifer1/centurion-test-cc:*). GitHub-hosted runners ship Docker.
+name: herald-piper-image
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: herald-piper-image
+  cancel-in-progress: false
+
+env:
+  ACCOUNT: "262602454064"
+  REGION: us-east-1
+  REPO: herald-browser
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials (OIDC, keyless)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::262602454064:role/herald-deploy
+          aws-region: us-east-1
+
+      - name: Prove assumed identity
+        run: aws sts get-caller-identity
+
+      - name: Resolve image version from package.json
+        id: ver
+        working-directory: agents/herald-piper
+        run: echo "version=$(node -e "process.stdout.write(require('./package.json').version)")" >> "$GITHUB_OUTPUT"
+
+      - name: Log in to Amazon ECR
+        run: aws ecr get-login-password --region "$REGION" | docker login --username AWS --password-stdin "$ACCOUNT.dkr.ecr.$REGION.amazonaws.com"
+
+      - name: Build image (piper-<version> + piper-latest)
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          BASE="$ACCOUNT.dkr.ecr.$REGION.amazonaws.com/$REPO"
+          docker build -t "$BASE:piper-$VERSION" -t "$BASE:piper-latest" agents/herald-piper
+
+      - name: Push both tags
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          BASE="$ACCOUNT.dkr.ecr.$REGION.amazonaws.com/$REPO"
+          docker push "$BASE:piper-$VERSION"
+          docker push "$BASE:piper-latest"
+
+      - name: Confirm tags in ECR
+        continue-on-error: true
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          aws ecr describe-images --repository-name "$REPO" --region "$REGION" \
+            --image-ids imageTag="piper-$VERSION" imageTag="piper-latest" \
+            --query 'imageDetails[].imageTags' --output json
