@@ -177,6 +177,18 @@ variable "session_secret_read" {
   description = "Fargate only — grants GetSecretValue on herald/sessions/* (Piper, Gia, Sol). Decryption still gated by per-user CMKs at Stage 2."
 }
 
+variable "vault_service" {
+  type        = bool
+  default     = false
+  description = "Lambda only (herald-vault, SPEC-C 6) — grants the DESTRUCTIVE revoke plane: DeleteSecret/DescribeSecret on herald/sessions/*, kms:RetireGrant/RevokeGrant on per-person CMKs (alias/herald/user/*), and RunTask/StopTask on the capture + browser tasks. Deliberately NO GetSecretValue and NO kms:Decrypt — the vault Lambda NEVER reads cookie plaintext (only fargate roles do)."
+}
+
+variable "capture_taskdef_family" {
+  type        = string
+  default     = "herald-vault-capture-prod"
+  description = "The ephemeral capture task family the vault Lambda may RunTask (SPEC-C 3)."
+}
+
 data "aws_caller_identity" "me" {}
 
 locals {
