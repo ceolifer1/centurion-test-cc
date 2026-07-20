@@ -117,6 +117,73 @@ data "aws_iam_policy_document" "exec_perms" {
     }
   }
 
+  # herald-vault revoke plane (SPEC-C 6) — DESTRUCTIVE only. DeleteSecret +
+  # DescribeSecret on the session secrets. Explicitly NO GetSecretValue: the
+  # vault Lambda deletes but never reads a session (cookie plaintext is a fargate-
+  # only surface, README non-negotiable).
+  dynamic "statement" {
+    for_each = var.vault_service ? [1] : []
+    content {
+      sid       = "RevokeSessionSecrets"
+      actions   = ["secretsmanager:DeleteSecret", "secretsmanager:DescribeSecret", "secretsmanager:ListSecretVersionIds"]
+      resources = ["arn:aws:secretsmanager:us-east-1:${local.account_id}:secret:herald/sessions/*"]
+    }
+  }
+  # Retire/revoke grants on the per-person CMKs only (alias/herald/user/*). No
+  # kms:Decrypt — the vault Lambda cannot read any session, by policy.
+  dynamic "statement" {
+    for_each = var.vault_service ? [1] : []
+    content {
+      sid       = "RetirePerPersonGrants"
+      actions   = ["kms:RetireGrant", "kms:RevokeGrant", "kms:ListGrants", "kms:DescribeKey"]
+      resources = ["*"]
+      condition {
+        test     = "StringLike"
+        variable = "kms:ResourceAliases"
+        values   = ["alias/herald/user/*"]
+      }
+    }
+  }
+  # Launch the ephemeral capture task (SPEC-C 3) + stop running session tasks on
+  # revoke so in-memory cookies die with the container (SPEC-C 6.3).
+  dynamic "statement" {
+    for_each = var.vault_service ? [1] : []
+    content {
+      sid       = "RunCaptureTask"
+      actions   = ["ecs:RunTask"]
+      resources = ["arn:aws:ecs:us-east-1:${local.account_id}:task-definition/${var.capture_taskdef_family}:*"]
+    }
+  }
+  dynamic "statement" {
+    for_each = var.vault_service ? [1] : []
+    content {
+      sid     = "PassCaptureRoles"
+      actions = ["iam:PassRole"]
+      resources = [
+        "arn:aws:iam::${local.account_id}:role/${var.capture_taskdef_family}-task",
+        "arn:aws:iam::${local.account_id}:role/${var.capture_taskdef_family}-ecsexec"
+      ]
+      condition {
+        test     = "StringEquals"
+        variable = "iam:PassedToService"
+        values   = ["ecs-tasks.amazonaws.com"]
+      }
+    }
+  }
+  dynamic "statement" {
+    for_each = var.vault_service ? [1] : []
+    content {
+      sid       = "StopSessionTasksOnCluster"
+      actions   = ["ecs:StopTask", "ecs:DescribeTasks", "ecs:ListTasks"]
+      resources = ["*"]
+      condition {
+        test     = "ArnEquals"
+        variable = "ecs:cluster"
+        values   = [local.browser_cluster_arn]
+      }
+    }
+  }
+
   # Explicit chain edges — nothing transitive (SPEC-H section 4).
   dynamic "statement" {
     for_each = length(var.invoke_peers) > 0 ? [1] : []

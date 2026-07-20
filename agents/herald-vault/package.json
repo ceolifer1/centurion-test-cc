@@ -1,0 +1,13 @@
+{
+  "name": "herald-vault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD session-vault service (SPEC-C). Orchestrates consented browser-session capture, per-user KMS-encrypted storage in Secrets Manager (herald/sessions/<person>/<platform>), the consent ledger, and destructive revoke. The Lambda handles consent + revoke + status and NEVER reads cookie plaintext (only fargate roles touch session material); the capture harness (scripts/capture-session.mjs) runs in the ephemeral capture task and calls storeSession after a real human login. Runtime injection is Piper's vault.mjs half. One agent = one service (SEC-3).",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}

@@ -21,6 +21,7 @@ on:
           - herald-sol
           - herald-gia
           - herald-rhea
+          - herald-vault
       mode:
         description: "plan (default, read-only) or apply"
         type: choice
