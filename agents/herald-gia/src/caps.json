@@ -1,0 +1,41 @@
+{
+  "version": "spec-d-2026-07-10",
+  "note": "SPEC-D platform safety caps. Per person, per day unless week present. Ceilings, not targets. Changing any number = PR + Ashton approval (SPEC-D 7.4). Piper/Gia read these; they only ever receive allow/deny. This file is the exact peer of agents/herald-piper/src/caps.json - keep the two in lockstep.",
+  "global": {
+    "min_spacing_seconds": 180,
+    "burst": { "max": 3, "window_minutes": 15 },
+    "jitter_minutes_max": 22,
+    "active_hours": {
+      "timezone": "America/Chicago",
+      "weekday": { "start": "07:30", "end": "18:30" },
+      "saturday": { "start": "09:00", "end": "12:00", "posts_only": true },
+      "sunday": null
+    }
+  },
+  "platforms": {
+    "linkedin_personal": {
+      "post":    { "day": 1, "week": 4 },
+      "comment": { "day": 5, "week": 20 },
+      "like":    { "day": 15 },
+      "connect": { "day": 5, "week": 20 },
+      "follow":  { "day": 5 },
+      "profile_view": { "day": 20 },
+      "profile_update": { "day": 1, "week": 2 }
+    },
+    "linkedin_company": {
+      "post":    { "day": 1, "week": 3 },
+      "reply":   { "day": 10 },
+      "reshare": { "day": 1 }
+    },
+    "x": {
+      "post":    { "day": 3, "week": 12 },
+      "reply":   { "day": 5 },
+      "like":    { "day": 15 },
+      "reshare": { "day": 3 },
+      "follow":  { "day": 0, "disabled": true }
+    },
+    "google_business": {
+      "post": { "week": 2 }
+    }
+  }
+}

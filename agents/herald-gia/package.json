@@ -1,0 +1,13 @@
+{
+  "name": "herald-gia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Gia - growth/engagement agent (Lambda). Proposes warm-only engagement (like/comment) within SPEC-D platform-safety caps via reserve-then-act, drafts company-page posts through the Vera gate, and routes follows to a human-tap queue (X follows are DISABLED for automation). Self-contained (SEC-3, SPEC-H 4): the only outbound edge is Vera. Envelope per SPEC-B section 7; caps per SPEC-D; queue state per SPEC-G.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
