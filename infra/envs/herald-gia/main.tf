@@ -1,5 +1,10 @@
-# HERALD agent stack — gia (fargate, engagement). State: herald/gia-prod.tfstate.
-# Gia proposes, Vera clears against safety caps, Piper executes (SPEC-H section 4).
+# HERALD agent stack — gia (lambda, growth/engagement). State: herald/gia-prod.tfstate.
+# Gia proposes warm-only engagement + company-page drafts; Vera clears them; the
+# browser executor acts. Self-contained (SEC-3 / SPEC-H 4): the ONLY outbound edge
+# is Vera (review_content). Lambda variant, mirroring herald-nico — engage +
+# enqueue_follow are deterministic; manage_company_page spends model tokens through
+# the same engine-wide $400 gate. No browser, no session vault: Gia never publishes
+# or engages directly (a cleared engagement is executed by Piper-family downstream).
 terraform {
   required_version = ">= 1.6"
   required_providers {
@@ -21,59 +26,28 @@ provider "aws" {
   }
 }
 
-data "terraform_remote_state" "shared" {
-  backend = "s3"
-  config = {
-    bucket = "cios-tfstate-262602454064"
-    key    = "herald/shared-prod.tfstate"
-    region = "us-east-1"
-  }
-}
-
-data "aws_vpc" "default" {
-  default = true
-}
-
-data "aws_subnets" "default" {
-  filter {
-    name   = "vpc-id"
-    values = [data.aws_vpc.default.id]
-  }
-}
-
-variable "container_image" {
+variable "zip_path" {
   type    = string
-  default = "262602454064.dkr.ecr.us-east-1.amazonaws.com/herald-browser:gia-latest"
+  default = "../../../agents/herald-gia/dist/function.zip"
 }
 
 module "agent" {
   source = "../../modules/agent-service"
 
-  agent   = "gia"
-  env     = "prod"
-  variant = "fargate"
+  agent    = "gia"
+  env      = "prod"
+  variant  = "lambda"
+  zip_path = var.zip_path
 
-  cluster_arn      = data.terraform_remote_state.shared.outputs.cluster_arn
-  container_image  = var.container_image
-  vpc_id           = data.aws_vpc.default.id
-  subnet_ids       = data.aws_subnets.default.ids
-  assign_public_ip = true
-
-  # Reads logged-in surfaces on behalf of users — session vault access (KMS-gated).
-  session_secret_read = true
-
-  # Proposals route through Vera (SPEC-H section 4).
+  # Comment copy + company-page drafts go to Vera — the only edge Gia holds (SPEC-H 4).
   invoke_peers = ["vera"]
 }
 
 output "service_name" {
   value = module.agent.service_name
 }
-output "task_definition_arn" {
-  value = module.agent.task_definition_arn
-}
-output "task_role_arn" {
-  value = module.agent.task_role_arn
+output "function_url" {
+  value = module.agent.function_url
 }
 output "scheduler_role_arn" {
   value = module.agent.scheduler_role_arn
@@ -81,9 +55,6 @@ output "scheduler_role_arn" {
 output "secret_arns" {
   value = module.agent.secret_arns
 }
-output "security_group_id" {
-  value = module.agent.security_group_id
-}
-output "subnet_ids" {
-  value = module.agent.subnet_ids
+output "invoke_policy_arn" {
+  value = module.agent.invoke_policy_arn
 }
