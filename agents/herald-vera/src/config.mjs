@@ -12,7 +12,7 @@ export const SECRETS_PREFIX = process.env.SECRETS_PREFIX || `herald/${AGENT}`;
 export const CAPABILITY = 'herald';
 // SPEC-H section 4: the only inbound peer edges into Vera (defense in depth
 // over the IAM edges - who calls me lives HERE + IAM, never in payload logic).
-export const ALLOWED_CALLERS = ['nico', 'piper', 'rhea', 'sol', 'gia'];
+export const ALLOWED_CALLERS = (process.env.ALLOWED_CALLERS ? process.env.ALLOWED_CALLERS.split(',').map(s => s.trim()).filter(Boolean) : ['nico', 'piper', 'rhea', 'sol', 'gia', 'cass', 'linkedin']);
 export const MAX_CHAIN_DEPTH = 4;
 // P1 is deterministic-only. The LLM brand/tone pass (VERA-B05 + the
 // model-scored half of VERA-B03) is wired behind this flag, default OFF.
