@@ -1,0 +1,13 @@
+{
+  "name": "herald-gia",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD Gia - growth/engagement agent (Lambda). COMPLIANT rebuild: engages via LinkedIn's OFFICIAL versioned REST API (POST /rest/reactions + POST /rest/socialActions/{urn}/comments) on a 3-legged OAuth member token read from the shared vault - NO cookies, NO browser, NO feed scan, NO ToS-gray automation. Engages ONLY curated target post URNs (warm-only), re-verifies comment copy through Vera, enforces SPEC-D caps (reserve-then-act), and acts ONLY when HERALD_LIVE=true AND the token carries the Community-Management scope (dry-run default). Company-page posting is queue-only (pending CM API approval); follows are human-tap only. Self-contained (SEC-3): outbound edges are Vera + the LinkedIn API.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
