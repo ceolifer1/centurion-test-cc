@@ -27,6 +27,11 @@ output "exec_role_arn" {
   value       = local.is_lambda ? aws_iam_role.exec[0].arn : aws_iam_role.ecsexec[0].arn
 }
 
+output "exec_role_name" {
+  description = "Lambda exec role NAME (lambda variant) — lets an env attach extra scoped policies (e.g. the OAuth token vault) without a module change"
+  value       = local.is_lambda ? aws_iam_role.exec[0].name : ""
+}
+
 output "scheduler_role_arn" {
   value = aws_iam_role.scheduler.arn
 }

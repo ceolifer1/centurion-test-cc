@@ -1,0 +1,13 @@
+{
+  "name": "herald-linkedin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HERALD LinkedIn publisher (Lambda). COMPLIANT posting via LinkedIn's OFFICIAL REST /rest/posts API on a 3-legged OAuth member token (w_member_social) - NO cookies, NO browser, NO ToS-gray automation. Kill-check first, re-verifies Vera on the exact final text, enforces SPEC-D caps (reserve-then-act), and posts ONLY when HERALD_LIVE=true (dry-run default). One agent = one service (SEC-3).",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build-zip.mjs"
+  },
+  "dependencies": {}
+}
